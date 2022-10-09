@@ -10,7 +10,7 @@ spec:
       chart: hello-world
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: redis
   install:
     createNamespace: true
