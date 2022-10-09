@@ -2,8 +2,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: redis1
-  namespace: cluster-config
+  name: redis
+  namespace: pratik
 spec:
   interval: 10m0s
   url: https://charts.bitnami.com/bitnami
