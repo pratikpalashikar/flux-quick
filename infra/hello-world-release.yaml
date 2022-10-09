@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: redis
+  name: hello
   namespace: pratik
 spec:
   chart:
@@ -11,10 +11,10 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: redis
+        name: hello
   install:
     createNamespace: true
   interval: 1m0s
-  releaseName: redis
-  targetNamespace: redis
+  releaseName: hello
+  targetNamespace: hello
 

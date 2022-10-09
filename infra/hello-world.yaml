@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: hello
-  namespace: pratik
+  namespace: pratik1
 spec:
   interval: 5m0s
   type: oci
