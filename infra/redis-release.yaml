@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: redis
+      chart: hello-world
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: OCIRepository
