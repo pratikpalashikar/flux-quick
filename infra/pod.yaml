@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: pod
+  namespace: pratik4
+spec:
+  interval: 5m0s
+  type: oci
+  url: oci://helm0.azurecr.io/helm
+  secretRef:
+    name: helm-secret
+
+
