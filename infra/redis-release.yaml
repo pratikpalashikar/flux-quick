@@ -1,5 +1,5 @@
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta2
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: redis
@@ -10,7 +10,7 @@ spec:
       chart: hello-world
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: redis
   install:
     createNamespace: true

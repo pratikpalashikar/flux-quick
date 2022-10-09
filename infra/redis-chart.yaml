@@ -1,9 +1,10 @@
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: OCIRepository
+kind: HelmRepository
 metadata:
   name: redis
   namespace: cluster-config
 spec:
   interval: 10m0s
+  type: "oci"
   url: oci://helm0.azurecr.io/helm
